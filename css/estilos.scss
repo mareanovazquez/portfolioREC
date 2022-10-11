@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+//variables
+//COLORES
+$color1: #7C7A7A;
+$color2: #000;
+$color3: #F44C28;
+$color4: #BFBEBE;
+$color5: whitesmoke;
+$color6: #212529;
+
+//TIPOGRAFÍAS
+$titulos: 'Poppins', sans-serif; 
+$parrafos: 'Open Sans', sans-serif;
+
+//TAMAÑO TIPOGRAFÍA
+
+$textopequenio: 18px;
+$textofooter: 14px;
+$textocelular:16px;
+$textosloganD: 40px;
+$textosloganN:35px;
+$textosloganT: 25px;
+$textosloganC:20px;
+$tituloD:120px;
+$tituloN: 90px;
+$tituloT: 60px;
+$tituloC: 50px;
+
+
+//aplicando estilos
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+hr {
+    width: 90%;
+    height: 2px;
+    background-color:$color1;
+    border: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+header{
+    padding: 10px;
+    background-color: $color6;
+
+    .imagenLogotipo {
+        width: 200px;
+    }
+}
+
+main {
+    background-image: url(../img/principal.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 50px;
+
+    .principal {
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.clientes {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    h4 
+            p {
+                text-align: center;
+                padding-left: 20px;
+                color: $color6;
+                font-family: $parrafos;
+                font-size: $textocelular;
+                font-weight: 600;
+            }
+            .clientes1 {
+                padding: 30px;
+                .cliente {
+                    padding: 10px;
+                }
+            }        
+}
+
+.cliente:hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.quienesSomos {
+    background-image: url(../img/quienesSomos.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+        .quienesSomos1 {
+            background-color: rgba(0,0,0,0.6);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            .quienesSomosH2 {
+                color: whitesmoke;
+                
+            }
+            .presentacion {
+                color: whitesmoke;
+                width: 100%;
+            }
+    }
+        }
+
+.nosotras1 {
+    padding: 30px;
+    margin-top: auto;
+    margin-right: auto;
+    
+    
+    .laura {
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.7);
+        
+        .lauraTexto 
+            h3 {
+                font-family: $parrafos;
+                font-size: $textosloganT;
+                text-align: center;
+                font-weight: 600;
+            }
+            h4 {
+                font-family: $parrafos;
+                font-size: $textocelular;
+                text-align: center;
+            }
+            p{
+                font-family: $parrafos;
+                font-size: $textopequenio;
+                text-align: center;
+            }
+        .lauraFoto {
+            padding: 80px;
+        }
+    }
+
+    .sol {
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: 0px 9px 32px -1px rgba(0,0,0,0.3);
+
+        .solTexto 
+            h3 {
+                font-family: $parrafos;
+                font-size: $textosloganT;
+                text-align: center;
+                font-weight: 600;
+            }
+            h4 {
+                font-family: $parrafos;
+                font-size: $textocelular;
+                text-align: center;
+            }
+            p{
+                font-family: $parrafos;
+                font-size: $textopequenio;
+                text-align: center;
+            }
+
+        .solFoto {
+            padding: 80px;
+        }
+    }
+}
+.contacto {
+    background-image: url(../img/imagenFormulario_Desenfoque.jpg);
+    background-size: cover;
+
+    .contacto1{
+       /*  div {
+            .imagenFormulario {
+                display:none;
+                }
+            } */
+        .formulario{ 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;            
+            div {
+                img {
+                    width: 125px;
+                    }
+                }
+            div {
+                ul {
+                    padding: 10px;
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            font-size: $textopequenio;
+                            color: $color2;  
+                            font-weight: 600;                              
+                            }     
+                        a:hover {
+                            color:$color4;
+                            font-weight: 500;
+                            text-decoration: none;
+                            }      
+                        }   
+                    }    
+                }
+            }
+        }    
+    }
+
+/*Boton Volver Arriba*/
+.btn-volver-arriba{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 30%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99999;
+    margin-right: -60px;
+    transition: all .4s ease;
+}
+.btn-volver-arriba a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    text-align: center;
+}
+.btn-volver-arriba a i{
+    font-size: 1rem;
+    color: #fff;
+    line-height: 40px;
+}
+/*efecto borde*/
+.prueba:hover {
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #BFBEBE;
+    transition: 2s;
+    
+}
+
+.portfolio {
+    background-image: url(../img/queHacemos.jpg);
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: $tituloC;
+        letter-spacing: 3mm;
+        font-weight: 600;
+        font-family: $titulos;     
+        
+    }
+}
+
+
+/*Pantalla celular*/
+@media only screen and (min-width:320px) { 
+    .principal1 {  
+        h1 {
+            font-family: $titulos;
+            font-size: $tituloC;
+            color: $color5;
+            text-align: center;
+            font-weight: 700;
+        }
+        p {
+            font-family: $parrafos;
+            font-size: $textosloganC;
+            color: $color5;
+            text-align: center;
+            font-weight: 500;
+            }
+        }
+    
+    h2 {
+        color: $color6;
+        font-family: $titulos;
+        font-size: $textosloganT;
+        font-weight: 600;
+        text-align: center;
+        padding: 40px;
+    }
+    h2:hover {
+        color:$color1;
+    }
+
+    .comoFunciona {
+        .comoFuncionaH2 {
+            color: whitesmoke;
+            font-family: $titulos;
+            font-size: $textosloganT;
+            font-weight: 600;
+            text-align: center;
+            padding: 40px;
+        }
+        .comoFunciona1 {
+            padding: 20px;
+
+            div {
+                img {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .comoFuncionaH2:hover {
+        color:$color1;
+    }
+    .queHacemos {
+        padding-top: 30px;
+        width: 100%;
+        .queHacemos1 {
+            div {
+                img {
+                    padding-bottom: 30px;
+                }
+            }    
+            div {    
+                .trabajos {
+                    text-align: left;
+                    font-family: $parrafos;
+                    font-size: $textocelular;
+                    padding: 10px;
+                    padding-bottom: 20px;
+                    margin-left: 50px;
+                        span a {
+                                color: $color6;
+                                list-style: none;
+                                font-size: $textopequenio;
+                                border-radius: 5px;
+                                border-style: solid;
+                                border-color: $color1;
+                                padding: 5px;
+                                text-align: end;
+                        }
+                    }
+                }    
+        }
+    }
+
+    
+.trabajos span a:hover {
+    text-decoration: none;
+    font-weight: 600;
+    background-color: $color1;
+    
+}
+    .presentacion {
+        text-align: center;
+        font-family: $parrafos;
+        font-size: $textocelular;
+        padding: 10px;
+    }
+    .funcionamos {
+        text-align: center;
+        font-family: $parrafos;
+        font-size: $textocelular;
+        padding-top: 20px;
+        color: white;
+
+}
+    .contacto {
+        background-image: url(../img/imagenFormulario_Desenfoque.jpg);
+        background-size: cover;
+    
+        .contacto1{
+        /*    div {
+                .imagenFormulario {
+                    display:none;
+                    }
+                } */
+            .formulario{ 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;            
+    
+                div {
+                    img {
+                        width: 150px;
+                        }
+                    }
+                div {
+                    ul {
+                        padding: 10px;
+                        
+                        li {
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                text-align: left;
+                                font-size: $textocelular;
+                                color: $color2;                                
+                                }     
+                            a:hover {
+                                color:$color4;
+                                font-weight: 500;
+                                text-decoration: none;
+                                }      
+                            }   
+                        }    
+                    }
+                }
+            }    
+        }
+}
+
+/*Pantalla tablet*/
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .principal1 {  
+            h1 {
+                
+                font-size: $tituloT;
+            }
+            p {
+                font-size: $textosloganT;
+                }
+            }
+    h2 {
+        font-size: $textosloganD;
+        }
+    h2:hover {
+        color:$color1;
+    }
+
+    .comoFuncionaH2 {
+        font-size: 50px;
+    }
+
+
+    .contacto {
+        background-image: url(../img/imagenFormulario_Desenfoque.jpg);
+        background-size: cover;
+    
+        .contacto1{
+            /* div {
+                .imagenFormulario {
+                    display:none;
+                    }
+                } */
+            .formulario{ 
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;            
+                div {
+                    width: 30%;
+                    img {
+                        width: 200px;
+                        }
+                    }
+                div {
+                    width: 50%;    
+                    ul {
+                        padding: 10px;
+                        
+                        border-left-style: solid;
+                        border-left-color: $color3;
+                        border-left-width: 2px;
+                        li {
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                text-align: left;
+                                font-size: $textosloganC;
+                                color: $color2;                                
+                                }     
+                            a:hover {
+                                color:$color4;
+                                font-weight: 500;
+                                text-decoration: none;
+                                }      
+                            }   
+                        }    
+                    }
+                }
+            }    
+        }
+}
+
+/*Pantalla notebook*/
+@media only screen and (min-width:768px) {
+    .principal1 {  
+        h1 {
+            font-size: $tituloN;
+            }
+        p {
+            font-size: $textosloganN;
+            }
+        }                                                                                   
+    h2 {
+        font-size: $tituloC;
+        }
+    h2:hover {
+        color:$color1;
+}
+
+.queHacemos {
+    padding-top: 30px;
+    width: 100%;
+        .queHacemos1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            div {
+                width: 45%;
+                }
+                .trabajos {
+                    font-size: $textopequenio;
+                    text-align: left;
+                }
+        }
+    }
+
+.comoFunciona {
+    padding-top: 30px;
+    width: 100%;
+    .comoFuncionaH2 {
+        font-size: $tituloC;
+    }
+    .comoFunciona1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 30px;
+        div {
+            width: 45%;
+        }
+        div {
+            width: 45%;
+        }
+    }
+}
+.comoFuncionaH2:hover {
+    color:$color1;
+}
+
+.presentacion {
+        font-size: $textopequenio;
+        
+    }
+
+.contacto {
+    background-image: url(../img/imagenFormulario_Desenfoque.jpg);
+    background-size: cover;
+
+    .contacto1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+
+     /*    div {
+            width: 40%;
+            .imagenFormulario {
+                display:block;
+                padding-bottom: 20px;
+                }
+            } */
+        .formulario{ 
+            width: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 30px;           
+            div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 35%;
+                img {
+                    width: 200px;
+                    }
+                }
+            div {
+                width: 45%;     
+                ul {
+                    padding-left: 130px;
+                    
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            text-align: left;
+                            font-size: $textosloganC;
+                            color: $color2;                                
+                            }     
+                        a:hover {
+                            color:$color4;
+                            font-weight: 500;
+                            text-decoration: none;
+                            }      
+                        }   
+                    }    
+                }
+            }
+        }    
+    }
+
+}
+
+/*Pantalla Desktop*/
+@media only screen and (min-width:992px) {
+.principal1 {  
+        h1 {
+        font-size: $tituloD;
+        }
+        p {
+        font-size: $textosloganD;
+        }
+    }
+    h2 {
+        font-size: $tituloC;
+        
+    }
+    h2:hover {
+        color:$color1;
+    }
+    .comoFuncionaH2 {
+        font-size: $tituloC;
+    }
+}
+
+
+@import "_menu";
+@import "_footer";

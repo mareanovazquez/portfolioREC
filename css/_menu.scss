@@ -1,0 +1,25 @@
+.menu {
+        
+    ul {
+        margin: 5px;
+        
+        li {
+            list-style-type: none;
+            font-family: $parrafos;
+            padding: 5px;
+            
+            a {
+                font-size: 10px;
+                color: $color4;
+                list-style: none;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.menu a:hover {
+    color: $color3;
+    font-weight: 600;
+}
