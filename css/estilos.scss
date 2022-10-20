@@ -350,7 +350,7 @@ main {
           padding-bottom: 20px;
           margin-left: 50px;
           span a {
-            color: $color6;
+            color: $color3;
             list-style: none;
             font-size: $textopequenio;
             border-radius: 5px;
@@ -367,7 +367,9 @@ main {
   .trabajos span a:hover {
     text-decoration: none;
     font-weight: 600;
-    background-color: $color1;
+    background-color: #bfbebe;
+    transition: 2s;
+    
   }
   .presentacion {
     text-align: center;

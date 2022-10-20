@@ -302,7 +302,7 @@ main .principal {
     margin-left: 50px;
   }
   .queHacemos .queHacemos1 div .trabajos span a {
-    color: #212529;
+    color: #f44c28;
     list-style: none;
     font-size: 18px;
     border-radius: 5px;
@@ -314,7 +314,8 @@ main .principal {
   .trabajos span a:hover {
     text-decoration: none;
     font-weight: 600;
-    background-color: #7c7a7a;
+    background-color: #bfbebe;
+    transition: 2s;
   }
   .presentacion {
     text-align: center;
