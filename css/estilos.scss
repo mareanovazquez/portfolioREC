@@ -265,6 +265,7 @@ main {
   
 }
  */
+ /*loading index*/
 .loading {
   height: 2px;
   background-color: #f44c28;
@@ -277,10 +278,10 @@ main {
     width: 80%;
   }
 }
+
 .loading {
   animation-name: movingLeft;
   animation-duration: 10s;
-  
   animation-iteration-count: 3;
   animation-timing-function: linear;
   animation-direction: alternate;
@@ -301,16 +302,25 @@ main {
     font-family: $titulos;
   }
 }
+/*loading Portfolio*/
+
 .portfolioLoading {
   
   height: 2px;
   background-color: #f44c28;
 }
+@keyframes movingLeftP {
+  from{
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
 .portfolioLoading {
-  animation-name: movingLeft;
+  animation-name: movingLeftP;
   animation-duration: 10s;
-  
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-fill-mode: forwards;
