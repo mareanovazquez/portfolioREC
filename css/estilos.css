@@ -219,11 +219,50 @@ main .principal {
 }
 
 /*efecto borde*/
-.prueba:hover {
+/* .prueba:hover {
   border-style: solid;
-  border-radius: 15px;
   border-color: #bfbebe;
-  transition: 2s;
+  border-radius: 5px;
+  border-width: 2px;
+  transition: .8s;
+
+}
+ */
+.loading {
+  height: 2px;
+  background-color: #f44c28;
+}
+
+@-webkit-keyframes movingLeft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes movingLeft {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
+}
+.loading {
+  -webkit-animation-name: movingLeft;
+          animation-name: movingLeft;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .portfolio {
@@ -240,6 +279,32 @@ main .principal {
   letter-spacing: 3mm;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
+}
+
+.portfolioLoading {
+  height: 2px;
+  background-color: #f44c28;
+}
+
+.portfolioLoading {
+  -webkit-animation-name: movingLeft;
+          animation-name: movingLeft;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.7s;
+  border-color: #f44c28;
 }
 
 /*Pantalla celular*/
@@ -301,8 +366,11 @@ main .principal {
     padding-bottom: 20px;
     margin-left: 50px;
   }
+  .queHacemos .queHacemos1 div .trabajos span {
+    display: inline-block;
+  }
   .queHacemos .queHacemos1 div .trabajos span a {
-    color: #f44c28;
+    color: #000;
     list-style: none;
     font-size: 18px;
     border-radius: 5px;
@@ -313,9 +381,8 @@ main .principal {
   }
   .trabajos span a:hover {
     text-decoration: none;
-    font-weight: 600;
-    background-color: #bfbebe;
-    transition: 2s;
+    background-color: #7c7a7a;
+    transition: 0.5s;
   }
   .presentacion {
     text-align: center;
@@ -575,7 +642,7 @@ main .principal {
 }
 .menu ul li a {
   font-size: 10px;
-  color: #bfbebe;
+  color: white;
   list-style: none;
   text-decoration: none;
 }
@@ -583,6 +650,22 @@ main .principal {
 .menu a:hover {
   color: #f44c28;
   font-weight: 600;
+  transition: 1s;
+}
+
+.menuRedes li a {
+  color: white;
+}
+
+.menuRedes li a:hover {
+  transform: scale(1.4);
+  color: #f44c28;
+  transition: 0.7s ease-in-out;
+}
+
+.menuRedes li .correo:hover {
+  transform: rotate(360deg);
+  transition: 1.5s ease-in-out;
 }
 
 footer {
@@ -626,5 +709,10 @@ footer .firma {
 
 .menuRedesFooter i:hover {
   transform: scale(1.8);
-  transition: all 0.7s;
+  transition: all 0.7s ease-in-out;
+}
+
+.menuRedesFooter li .correo:hover {
+  transform: rotate(360deg);
+  transition: 1.3s ease-in-out;
 }/*# sourceMappingURL=estilos.css.map */

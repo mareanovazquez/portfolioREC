@@ -10,7 +10,7 @@
             
             a {
                 font-size: 10px;
-                color: $color4;
+                color: white;
                 list-style: none;
                 text-decoration: none;
             }
@@ -22,4 +22,19 @@
 .menu a:hover {
     color: $color3;
     font-weight: 600;
+    transition: 1s;
+}
+
+.menuRedes li a {
+    color: white;
+}
+.menuRedes li a:hover {
+    transform: scale(1.4);
+    color: $color3;
+    transition: 0.7s ease-in-out;
+}
+
+.menuRedes li .correo:hover {
+    transform: rotate(360deg);
+    transition: 1.5s ease-in-out;
 }

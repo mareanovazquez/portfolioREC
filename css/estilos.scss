@@ -255,13 +255,37 @@ main {
   line-height: 40px;
 }
 /*efecto borde*/
-.prueba:hover {
-  border-style: solid;
-  border-radius: 15px;
-  border-color: #bfbebe;
-  transition: 2s;
-}
 
+/* .prueba:hover {
+  border-style: solid;
+  border-color: #bfbebe;
+  border-radius: 5px;
+  border-width: 2px;
+  transition: .8s;
+  
+}
+ */
+.loading {
+  height: 2px;
+  background-color: #f44c28;
+}
+@keyframes movingLeft {
+  from{
+    width: 0px;
+  }
+  to {
+    width: 80%;
+  }
+}
+.loading {
+  animation-name: movingLeft;
+  animation-duration: 10s;
+  
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
 .portfolio {
   background-image: url(../img/queHacemos.jpg);
   background-size: cover;
@@ -276,6 +300,25 @@ main {
     font-weight: 600;
     font-family: $titulos;
   }
+}
+.portfolioLoading {
+  
+  height: 2px;
+  background-color: #f44c28;
+}
+.portfolioLoading {
+  animation-name: movingLeft;
+  animation-duration: 10s;
+  
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+.card:hover{
+  transform: scale(1.02);
+  transition: 0.7s;
+  border-color: $color3;
 }
 
 /*Pantalla celular*/
@@ -349,28 +392,31 @@ main {
           padding: 10px;
           padding-bottom: 20px;
           margin-left: 50px;
-          span a {
-            color: $color3;
-            list-style: none;
-            font-size: $textopequenio;
-            border-radius: 5px;
-            border-style: solid;
-            border-color: $color1;
-            padding: 5px;
-            text-align: end;
-          }
-        }
-      }
+          span{
+            display: inline-block; 
+              a {
+                color: $color2;
+                list-style: none;
+                font-size: $textopequenio;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: $color1;
+                padding: 5px;
+                text-align: end;
+              }
+            }
+      } 
     }
   }
+}
 
   .trabajos span a:hover {
     text-decoration: none;
-    font-weight: 600;
-    background-color: #bfbebe;
-    transition: 2s;
+    background-color: $color1; 
+    transition: 0.5s;
     
   }
+
   .presentacion {
     text-align: center;
     font-family: $parrafos;

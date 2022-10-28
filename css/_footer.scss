@@ -45,5 +45,10 @@ footer {
 
 .menuRedesFooter i:hover {
     transform: scale(1.8);
-    transition: all 0.7s;
+    transition: all 0.7s ease-in-out;
+}
+
+.menuRedesFooter li .correo:hover {
+    transform: rotate(360deg);
+    transition: 1.3s ease-in-out;
 }
