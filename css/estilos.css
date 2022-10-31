@@ -65,10 +65,14 @@ main .principal {
 .clientes .clientes1 .cliente {
   padding: 10px;
 }
+.clientes .clientes1 img {
+  filter: grayscale(0.8);
+}
 
-.cliente:hover {
-  transform: scale(1.2);
-  transition: 2s;
+.cliente img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+  transition: 0.5s ease-in-out;
 }
 
 .quienesSomos {
@@ -219,15 +223,6 @@ main .principal {
 }
 
 /*efecto borde*/
-/* .prueba:hover {
-  border-style: solid;
-  border-color: #bfbebe;
-  border-radius: 5px;
-  border-width: 2px;
-  transition: .8s;
-
-}
- */
 /*loading index*/
 .loading {
   height: 2px;
