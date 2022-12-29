@@ -325,6 +325,27 @@ main {
   border-color: $color3;
 }
 
+.modal-dialog {
+  max-width: 800px;
+}
+.modal-title a:hover {
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.5s;
+  color: $color3;
+  
+}
+.carousel-control-prev-icon:hover {
+  transform: rotate(-360deg);
+  transition: 0.8s;
+  
+}
+.carousel-control-next-icon:hover {
+  transform: rotate(360deg);
+  transition: 0.8s;
+  
+}
+
 /*Pantalla celular*/
 @media only screen and (min-width: 320px) {
   .principal1 {
